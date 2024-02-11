@@ -7,6 +7,7 @@ import { Client, Collection, IntentsBitField } from 'discord.js';
 
 import { Events, Commands } from '../handlers';
 import Locals from './Locals';
+import Express from './Express';
 
 class Discord {
     private client: Client;
@@ -20,6 +21,7 @@ class Discord {
         });
         this.mountEvents();
         this.mountCommands();
+        this.mountExpress();
         this.launch();
     }
 
@@ -33,6 +35,11 @@ class Discord {
         this.client.commands = new Collection();
         this.client.commandArray = [];
         this.client = await Commands.init(this.client);
+    }
+
+    /* Mount express */
+    private mountExpress() {
+        Express.init()
     }
 
     /* launch the bot */

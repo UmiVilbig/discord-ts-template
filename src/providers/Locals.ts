@@ -20,7 +20,7 @@ class Locals {
 
         const app_port = process.env.APP_PORT || 3000;
         const app_host = process.env.APP_HOST || 'localhost';
-        const app_url = process.env.APP_URL || `http://${app_host}:${app_port}`;
+        const api_prefix = process.env.API_PREFIX || 'api';
 
         const app_name = process.env.APP_NAME || 'Viltech';
         const app_version = process.env.APP_VERSION || '1.0.0';
@@ -39,8 +39,8 @@ class Locals {
             app: {
                 port: app_port,
                 host: app_host,
-                url: app_url,
                 name: app_name,
+                prefix: api_prefix,
                 version: app_version
             },
             production
