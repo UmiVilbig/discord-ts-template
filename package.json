@@ -4,12 +4,16 @@
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
-    "prisma": "^5.9.1"
+    "prisma": "5.9.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@prisma/client": "^5.9.1"
+    "@discordjs/rest": "^2.2.0",
+    "@prisma/client": "5.9.1",
+    "discord-api-types": "^0.37.69",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.2"
   }
 }
