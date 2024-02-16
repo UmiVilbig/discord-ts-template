@@ -1,4 +1,5 @@
 # discord-ts-template
+currently prisma and mongo is not working properly
 
 To install dependencies:
 
