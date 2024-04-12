@@ -21,7 +21,7 @@ class Discord {
         });
         this.mountEvents();
         this.mountCommands();
-        this.mountExpress();
+        // this.mountExpress();
         this.launch();
     }
 
