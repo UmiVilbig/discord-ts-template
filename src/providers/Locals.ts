@@ -12,8 +12,8 @@ class Locals {
         dotenv.config({ path: path.join(__dirname, '../../.env') });
 
         const token = process.env.TOKEN;
-        const client_id = process.env.CLIENT_ID || '969451891366952991';
-        const guild_id = process.env.GUILD_ID || '932150468925333504';
+        const client_id = process.env.CLIENT_ID || '';
+        const guild_id = process.env.GUILD_ID || '';
 
         const db_port = process.env.DB_PORT || 27017;
         const db_host = process.env.DB_HOST || 'localhost';
@@ -22,7 +22,7 @@ class Locals {
         const app_host = process.env.APP_HOST || 'localhost';
         const api_prefix = process.env.API_PREFIX || 'api';
 
-        const app_name = process.env.APP_NAME || 'Viltech';
+        const app_name = process.env.APP_NAME || '';
         const app_version = process.env.APP_VERSION || '1.0.0';
         const production = process.env.NODE_ENV || 'development';
 
